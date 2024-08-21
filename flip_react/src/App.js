@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Dictionary from './components/Dictionary';
+import Instruction from './components/Instruction';
 
 function App() {
+  
+
   return (
     <div className="App">
-      <p>hello</p>
+      <Instruction/>
+      <Dictionary/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 # FLIP_REACT
 
-FLIP_REACT is an enhanced version of [FLIP](https://github.com/loafcheck/FLIP), incorporating advanced features and improvements. Leveraging React.js, this application integrates the Korean Dictionary [OpenAPI](https://krdict.korean.go.kr/openApi/openApi) to deliver an enriched user experience.
+FLIP_REACT is an enhanced version of [FLIP](https://github.com/loafcheck/FLIP), incorporating advanced features and improvements. Leveraging React.js, this application integrates the [Korean Dictionary OpenAPI](https://krdict.korean.go.kr/openApi/openApi) to deliver an enriched user experience.
 
 ## Features
 

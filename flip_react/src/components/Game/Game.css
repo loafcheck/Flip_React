@@ -1,9 +1,14 @@
 /* Game.css */
 .game-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
     padding: 16px;
+    position: relative;
 }
 
 .card {
@@ -48,4 +53,22 @@
     background-color: #f9f9f9;
     color: #333;
     transform: rotateY(180deg); /* Show front side */
+}
+.congratulation {
+    position: absolute; /* Position the congratulation message absolutely within the game container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center alignment */
+    background-color: #ff6600; /* Main color for background */
+    padding: 20px; /* Add padding for spacing */
+    border: 2px solid #2200ff; /* Subcolor for border */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other elements */
+    text-align: center; /* Center text inside the message */
+    font-size: 1.5em; /* Larger text for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a 3D effect */
+}
+
+.congratulation p {
+    color: #ffffff; /* White text for contrast */
 }

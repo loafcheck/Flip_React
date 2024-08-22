@@ -23,25 +23,29 @@ FLIP_REACT is an enhanced version of [FLIP](https://github.com/loafcheck/FLIP), 
 ## Game Overview
 
 ### 1. **Instruction**
+*Get started with the game by following the instructions provided.*
    ![Instruction Image](public/images/Instruction.png)
-   *Get started with the game by following the instructions provided.*
+   
 
 ---
 
 ### 2. **Dictionary**
+*Search Korean vocabulary using the [Korean Dictionary OpenAPI](https://krdict.korean.go.kr/openApi/openApi).*
    ![Dictionary Image](public/images/Dictionary.png)
-   *Search Korean vocabulary using the [Korean Dictionary OpenAPI](https://krdict.korean.go.kr/openApi/openApi).*
+   
 
 ---
 
 ### 3. **Game**
+*Play the flip game where you reveal cards and try to find matching pairs.*
    ![Game Image](public/images/Game.png)
-   *Play the flip game where you reveal cards and try to find matching pairs.*
+   
 
 ---
 
 ### 4. **Win**
+  *Once all cards are matched, a congratulatory message will pop up.*
    ![Win Image](public/images/Win.png)
-   *Once all cards are matched, a congratulatory message will pop up.*
+   
 
 ---

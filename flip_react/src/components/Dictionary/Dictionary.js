@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import {DICTIONARY_URL, API_KEY} from '../api';
+import {DICTIONARY_URL, API_KEY} from '../../api';
+import './Dictionary.css';
 
-const Dictionary = () => {
+const Dictionary = ({handleSearchLimitReached, handleResults}) => {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [searchCount, setSearchCount] = useState(0); //Track the number of searches
@@ -12,10 +13,10 @@ const Dictionary = () => {
          // Prevents the form from submitting the traditional way
          // Handle form submission with JavaScript here
 
-         if (searchCount >= 3) {
-            alert ('you have reached the maximum number of searches');
+         if (searchCount >= maxSearches) {
+            alert('You have reached the maximum number of searches');
             return;
-         }
+        }
 
         if (query.trim() === '') return;
 
@@ -36,15 +37,22 @@ const Dictionary = () => {
                word: item.getElementsByTagName('word')[0]?.textContent || 'No word',
                definition: item.getElementsByTagName('definition')[0]?.textContent || 'No definition'
            }));
-
+           
+           handleResults(newResults);
            // Update results array with new results
            setResults(prevResults => {
             const updatedResults = [...prevResults, ...newResults];
             return updatedResults;
            })
-
+         
+           
            //Increment the search count
            setSearchCount(prevCount => prevCount + 1);
+
+           //Notify App if search limits is reached
+           if(searchCount + 1 >= maxSearches) {
+            handleSearchLimitReached();
+           }
 
         } catch (error) {
             console.log ('ERROR fetching dictionary data', error);
@@ -53,40 +61,38 @@ const Dictionary = () => {
     }
     const remainingSearches = maxSearches - searchCount;
     return (
-        <div>
-        <p>You can search three times</p>
+        <div className="dictionary-container">
+        <div className="remaining-searches">
+            <p>Search Countdown: {remainingSearches}</p>
+            {remainingSearches === 0 && <span>You have used up all your searches.</span>}
+            {remainingSearches === 1 && <span>You can search only one more vocabulary</span>}
+            {remainingSearches === 2 && <span>You can search only two more vocabularies</span>}
+            {remainingSearches === 3 && <span>You can search three times</span>}
+        </div>
+        <div className="form-container">
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder = "Enter a word to search"
-                   /> 
-                   <button type="submit">Search</button>
+                    placeholder="Enter a word to search"
+                />
+                <button type="submit">Search</button>
             </form>
+        </div>
+        <div className="results-container">
+        <p>Review and memorize the following vocabulary words and their definitions:</p>
+
+
             <div>
-            {remainingSearches === 0 && (
-                <p>You have used up all your searches.</p>
-            )}
-            {remainingSearches=== 1 && (
-                <p>You can search only one more vocabulary</p>
-            )}
-            {remainingSearches=== 2 && (
-                <p>You can search only two more vocabulary</p>
-            )}
-            {remainingSearches=== 3 && (
-                <p>You can search only two more vocabulary</p>
-            )}
-            <p>Word : Definition</p>
-                <div>
-                    {results.map((result, index)=> (
-                        <div key={index}>
-                            <p>{result.word} : {result.definition}</p>
-                        </div>
-                    ))}
-                </div>
+                {results.map((result, index) => (
+                    <div key={index} className="result-item">
+                        <p>{result.word} : {result.definition}</p>
+                    </div>
+                ))}
             </div>
         </div>
+    </div>
     )
 }
 

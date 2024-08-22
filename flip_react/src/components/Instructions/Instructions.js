@@ -1,11 +1,11 @@
-
+import './Instructions.css';
 
 const Instruction = () => {
   
 
   return (
     <>
-        <div>
+        <div className="instruction-container">
             <h1>Instructions</h1>
             <p>1. Search Up to Three Vocabularies</p>
             <span>Enter your vocabulary words into the search field. You can search for up to three different words.</span>

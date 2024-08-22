@@ -1,0 +1,38 @@
+/* Memorize.css */
+.memorize-container {
+    background-color: #f9f9f9;
+    border: 2px solid #ff6600;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.memorize-container h2 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.memorize-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.memorize-container li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+.memorize-container .word {
+    font-weight: bold; /* Makes the word bold */
+    color: red;
+}

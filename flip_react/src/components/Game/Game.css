@@ -11,6 +11,11 @@
     position: relative;
 }
 
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small screens */
+    }
+}
 .card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;

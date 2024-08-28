@@ -1,6 +1,6 @@
 # HANGUL_MEMORY_MATCH
 
-HANGUL_MEMORY_MATCH is an enhanced version of [FLIP](https://github.com/loafcheck/FLIP), incorporating advanced features and improvements. Leveraging React.js, this application integrates the [Korean Dictionary OpenAPI](https://krdict.korean.go.kr/openApi/openApi) to deliver an enriched user experience.
+HANGUL_MEMORY_MATCH is revamped version of [FLIP](https://github.com/loafcheck/FLIP), restructured into a modular React app to gain deeper understanding of React and Open APIs, incorporating the [Korean Dictionary OpenAPI](https://krdict.korean.go.kr/openApi/openApi) 
 
 ## Motivation
  As an English tutor, I needed a tool to input custom vocabulary and create engaging learning games. Since most existing language games online only offer preset words, I developed HANGUL_MEMORY_MATCH

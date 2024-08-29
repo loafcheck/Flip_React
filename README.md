@@ -4,7 +4,7 @@ HANGUL_MEMORY_MATCH is revamped version of [FLIP](https://github.com/loafcheck/F
 
 ## Motivation
 
- I discovered that when education was interactive, children were able to retain information while having an enjoyable experience. Knowing that existing language games were limited to preset vocabulary, I developed the [HANGUL_MEMORY_MATCH](https://github.com/loafcheck/HANGUL_MEMORY_MATCH.git), which allowed more words to be integrated and customized. 
+ I discovered that when education was interactive, children were able to retain information while having an enjoyable experience. Knowing that existing language online games were limited to preset vocabulary, I developed the [HANGUL_MEMORY_MATCH](https://github.com/loafcheck/HANGUL_MEMORY_MATCH.git), which allowed more words to be integrated and customized. 
 
 ## Features
 

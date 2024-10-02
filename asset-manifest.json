@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HANGUL_MEMORY_MATCH/static/css/main.6eb4fbba.css",
+    "main.js": "/HANGUL_MEMORY_MATCH/static/js/main.e7b4094b.js",
+    "static/js/453.4c5d3fe9.chunk.js": "/HANGUL_MEMORY_MATCH/static/js/453.4c5d3fe9.chunk.js",
+    "index.html": "/HANGUL_MEMORY_MATCH/index.html",
+    "main.6eb4fbba.css.map": "/HANGUL_MEMORY_MATCH/static/css/main.6eb4fbba.css.map",
+    "main.e7b4094b.js.map": "/HANGUL_MEMORY_MATCH/static/js/main.e7b4094b.js.map",
+    "453.4c5d3fe9.chunk.js.map": "/HANGUL_MEMORY_MATCH/static/js/453.4c5d3fe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6eb4fbba.css",
+    "static/js/main.e7b4094b.js"
+  ]
+}

@@ -75,15 +75,14 @@ const Dictionary = ({handleSearchLimitReached, handleResults}) => {
                     type="text"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Enter a word to search"
+                    placeholder="Enter a Korean word to search."
                 />
+                <div className="koreanDictionary"><p>한영사전입니다. 한국어로 입력해주세요!</p></div>
                 <button type="submit">Search</button>
             </form>
         </div>
         <div className="results-container">
-        <p>Review and memorize the following vocabulary words and their definitions:</p>
-
-
+            <div className="koreanDictionary"><p>Review and memorize the following vocabulary words and their definitions:</p></div>
             <div>
                 {results.map((result, index) => (
                     <div key={index} className="result-item">

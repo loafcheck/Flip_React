@@ -1,5 +1,7 @@
 # HANGUL_MEMORY_MATCH
 
+[Let's Play Hangul Memory Match Game](https://loafcheck.github.io/HANGUL_MEMORY_MATCH/)
+
 HANGUL_MEMORY_MATCH is revamped version of [FLIP](https://github.com/loafcheck/FLIP), restructured into a modular React app to gain deeper understanding of React and Open APIs, incorporating the [Korean Dictionary OpenAPI](https://krdict.korean.go.kr/openApi/openApi) 
 
 ## Motivation

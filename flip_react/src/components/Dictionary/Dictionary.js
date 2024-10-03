@@ -82,7 +82,7 @@ const Dictionary = ({handleSearchLimitReached, handleResults}) => {
             </form>
         </div>
         <div className="results-container">
-            <div className="koreanDictionary"><p>Review and memorize the following vocabulary words and their definitions:</p></div>
+            <div className="koreanDictionary"><p>Review and memorize the following vocabulary words and their definitions!</p></div>
             <div>
                 {results.map((result, index) => (
                     <div key={index} className="result-item">
